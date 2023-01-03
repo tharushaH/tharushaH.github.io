@@ -1,0 +1,323 @@
+
+/*Makes scrolling from top of the page using the buttons smoother*/
+html {  
+    scroll-padding-top: 60px;
+    scroll-behavior: smooth;  
+}
+
+/*Font family imported from google fonts*/
+body{
+    background-color: #101935;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 200vh;
+}
+
+
+/*NAVBAR*/
+
+/*Includes box shadow (red blur) and transition for the sticky navbar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: #D60E0A;
+    background-color: #111118;
+    box-shadow: -7px -7px 40px #D60E0A, 2px 2px 12px #D60E0A;
+    z-index: 950;
+    transition: 0.3s ease-in;
+}
+
+/*Proprerty to have the navbar for the scroll*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*Sticky navbar*/
+nav.sticky{
+    display: flex;
+    justify-content: space-between;
+    color: #D60E0A;
+    background-color: #111118;
+    box-shadow: 0px 0px 0px, 0px 0px 0px #D60E0A;
+    z-index: 950;
+}
+
+/*Logo styling (TH)*/
+.logo{
+    font-size: 80px;
+    font-weight: 800;
+    padding-left: 20px;
+}
+
+/*Unordered list styling in Navbar*/
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 800px;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: 300;
+}
+ul li{
+    transition: font-size 0.3s ;
+    transition-timing-function: ease-out;
+}
+/*Link inside navbar styling*/
+ul li a{
+    text-decoration: none;
+    color:#ECEBF3;
+}
+/*List animatons on hover*/
+ul li:hover{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+
+/*HERO SECTION*/
+
+/*Header in hero section styling*/
+h1{
+    color:#ECEBF3;
+    font-size: 100px;
+    margin: 0;
+}
+/*Styling individual letters*/
+span{
+    color: #D60E0A;
+    font-weight:800;
+}
+/*Styling paragraph in */
+p{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px;
+}
+/*Styling @ sign in the paragraph*/
+.carleton{
+    color: #F41915;
+}
+/*Styling the color of pargraph and header*/
+h1, p{
+    color:#ECEBF3;
+}
+/*Hero area space styling*/
+.hero-area{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.hero{
+    margin-left: 60px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+
+/*IMPORTED BUTTON DESIGN*/
+/*Changes
+    - Colour on hover
+    - transition time*/
+.cButton{
+    font-size: 24px;
+    color: #ECEBF3;
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: #D60E0A;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 5px;
+    margin-top: 20px;
+    transition: color 2s;
+}
+.cButton {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+}
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #ECEBF3;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 0.7s ease-in-out;
+}
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #F41915;
+}
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/*Reference to author text styling*/ 
+.reference{
+color: #ECEBF3;
+font-size: 12px;
+font-weight: 100;
+}
+/*Reference to author link styling*/ 
+.reference a{
+text-decoration: none;
+color: #F41915;
+}
+
+
+
+/*ABOUT ME SECTION*/
+
+
+/*About me section space styling*/
+.aSection{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #ECEBF3;
+    color: #111118;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+/*header styling*/
+.aSection h2{
+    font-size: 40px;
+    font-weight:700;
+}
+/*paragraph styling*/
+.aSection p{
+color: #101935;
+}
+/*horizontal ruler styling*/
+.aSection hr{
+    border: 2px solid #101935;
+}
+
+/*profile image*/
+.profileIMG{
+    display: flex;
+    align-items: center;
+}
+
+/*profile image styling*/
+.myImage{
+    display: inline-block; 
+    position: relative; 
+    width: 250px; 
+    height: 250px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+} 
+
+
+/*Project Section*/
+
+/*Project section space styling*/
+.pSection{
+    background-color: #ECEBF3;
+    padding-top: 30px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 75px;
+}
+
+/*header styling*/
+.pSection h2{
+    font-size: 40px;
+    font-weight:700;
+}
+/*paragraph styling*/
+.pSection p{
+    color: #101935;
+}
+
+/*Making image a circle*/
+.circular--landscape img{ 
+    width: auto; 
+    height: 100%; 
+    margin-left: -50px;
+}
+/*project container space styling*/
+.project-container{
+    display: flex;
+    justify-content: space-around;
+}
+/*project space styling*/
+.project{
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px ;
+    margin: 10px;
+}
+
+/*styling for the git link in project section*/
+.git-link{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*image styling*/
+.project-image{
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+/*horizontal ruler styling*/
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*FOOTER SECTION*/
+
+/*footer space styling*/
+footer{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #111118;
+    color: #ECEBF3;
+    margin: 0;
+    text-align:center;
+}
+
+/*contact information container*/
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+}
+/*social container*/
+.socials-container{
+    display: flex;
+}

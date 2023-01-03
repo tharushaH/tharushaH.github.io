@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tharusha's Portfolio Website</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navbar at the top of the page, filled wiht the 'logo' and a unordered list of links.-->
+        <!--Button goes to sections of the pages-->
+        <nav>
+            <div class="logo">TH</div>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects-me">Projects</a></li>
+                <li><a href="#contact-me">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <!--Hero section, where my name, field, and where im studying is displayed-->
+        <!--A button is also imported from this website:https://dev.to/webdeasy/top-20-css-buttons-animations-f41 -->
+        <!--Author of the specific button is referenced-->
+        <div class="hero-area">
+            <div class="hero">
+                <h1> <span>T</span>harusa <span>H</span>erath</h1>
+                <p>2nd Year Software Engineer</p>
+                <p><span class="carleton">@</span>Carleton University</p>
+                <div class="cbutton">
+                    <div class="center">
+                      <button class="btn" onclick="window.location.href='#contact-me'">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span>Contact Me</span>
+                      </button>
+                    </div>
+                  </div>
+                  <br><br><br>
+                  <div class="reference">Button author: <a href="https://codepen.io/vitor-siqueira">@Vitor Siqueira</a></div>
+            </div>
+        </div>
+
+        <!--About me section with a simple header and description, including a profile image-->
+        <div class="aSection" id="about-me">
+            <div class="about">
+                <h2>About me</h2>
+                <p>My name is Tharusha Herath and I am currently a second year student studying Software Engineering at Carleton University. I am very passionate in learning different areas of programming. Currently I know <span>HTML, CSS, JavaScript, Python, C, and Java</span>.</p>
+            </div>
+            <!--Profile image-->
+            <div class="profileIMG">
+                <img class="myImage" src="imgs/profile-pic.jpg">
+            </div>
+            <hr>
+        </div>
+        <hr>
+
+
+        <!--Project section, includes the top 3 projects and their links to github-->
+        <div class="pSection" id="projects-me"> 
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project">
+                    <img class="project-image" src="imgs/placeholder.jpg" alt="Project One Image">
+                    <h3>Project One</h3>
+                    <p class="description">This is my project description about the project I havent made :/</p>
+                    <hr>
+                    <p class="git-link">View here</p>
+                </div>
+                <div class="project">
+                    <img class="project-image" src="imgs/placeholder.jpg" alt="Project One Image">
+                    <h3>Project Two</h3>
+                    <p class="description">This is my project description about the project I havent made :/</p>
+                    <hr>
+                    <p class="git-link">View here</p>
+                </div>
+                <div class="project">
+                    <img class="project-image" src="imgs/placeholder.jpg" alt="Project One Image">
+                    <h3>Project Three</h3>
+                    <p class="description">This is my project description about the project I havent made :/</p>
+                    <hr>
+                    <p class="git-link">View here</p>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <!--Footer section includes my contact information and socials with images from iconmastr https://iconmonstr.com/-->
+        <footer id="contact-me">
+                <div class="contact-title">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact info">
+                        <p><span>Email:</span> tharusha.herath13@gmail.com</p>
+                        <p><span>Phone:</span> +343-262-7707</p>
+                    </div>
+                    
+                    <div class="socials-container">
+                        <div>
+                            <p>Linkeden</p>
+                            <a href="https://www.linkedin.com/in/tharusha-herath/"><img src="icons/linkeden.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+                        </div>
+                        <div>
+                            <p>Github</p>
+                            <a href="https://github.com/tharushaH"><img src="icons/github.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+                        </div>
+                        <div>
+                            <p>Instagram</p>
+                            <a href="https://www.instagram.com/tharusha_h/"><img src="icons/instagram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+                        </div>
+                    </div>
+                </div>
+                
+        </footer>
+        
+        <!--Script for the sticky navbar-->
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var nav = document.querySelector("nav");
+                nav.classList.toggle("sticky", window.scrollY > 0)
+            })
+        </script>
+        
+        
+    </body>
+</html>
