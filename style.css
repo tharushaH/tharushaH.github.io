@@ -1,3 +1,8 @@
+/*
+Author: Tharusha Herath
+Date Modified: 2023-01-06
+*/
+
 
 /*Makes scrolling from top of the page using the buttons smoother*/
 html {  
@@ -260,6 +265,11 @@ color: #101935;
 /*paragraph styling*/
 .pSection p{
     color: #101935;
+}
+
+.pSection a{
+    color: #ed8f1c;
+    font-size: 1.3em; 
 }
 
 /*Making image a circle*/
