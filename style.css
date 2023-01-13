@@ -93,7 +93,13 @@ h1{
 /*Styling individual letters*/
 span{
     color: #D60E0A;
-    font-weight:800;
+    font-weight:700;
+}
+
+/*Styling for the git text*/
+.git{
+    color: purple;
+    font-weight:700;
 }
 /*Styling paragraph in */
 p{
@@ -268,8 +274,10 @@ color: #101935;
 }
 
 .pSection a{
+    text-decoration: none;
     color: #ed8f1c;
-    font-size: 1.3em; 
+    font-size: 1.3em;
+    font-weight: 500; 
 }
 
 /*Making image a circle*/
@@ -286,7 +294,7 @@ color: #101935;
 /*project space styling*/
 .project{
     width: 300px;
-    height: 500px;
+    height: auto;
     box-shadow: 5px 5px 20px ;
     margin: 10px;
 }
@@ -331,3 +339,4 @@ footer{
 .socials-container{
     display: flex;
 }
+
