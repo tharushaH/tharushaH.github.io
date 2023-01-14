@@ -296,7 +296,7 @@ color: #101935;
 .project{
     width: 300px;
     height: auto;
-    box-shadow: 5px 5px 20px ;
+    box-shadow: 5px 5px 20px;
     margin: 10px;
 }
 
@@ -310,6 +310,7 @@ color: #101935;
 .project-image{
     margin-top: 25px;
     width: 250px;
+    height: 250px;
     border-radius: 125px;
 }
 
